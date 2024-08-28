@@ -26,7 +26,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
 }
 
 .contenedor-header header .logo a {
@@ -73,7 +73,7 @@ html {
     color: white;
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .inicio .contenido-banner {
