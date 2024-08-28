@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     font-family: 'Roboto, sans-serif';
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.contenedor-header{
+.contenedor-header {
     background: #1e2326;
     position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 99;
 }
 
-.contenedor-header header{
+.contenedor-header header {
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -29,19 +29,19 @@ html{
     padding: 15px 20px;
 }
 
-.contenedor-header header .logo a{
+.contenedor-header header .logo a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 36px;
-    color: #1cb698 ;
+    color: #1cb698;
     text-decoration: none;
 }
 
-.contenedor-header header ul{
+.contenedor-header header ul {
     display: flex;
     list-style: none;
 }
 
-.contenedor-header header nav ul li a{
+.contenedor-header header nav ul li a {
     text-align: none;
     color: white;
     margin: 0 15px;
@@ -50,11 +50,11 @@ html{
     text-decoration: none;
 }
 
-.contenedor-header header nav ul li a:hover{
+.contenedor-header header nav ul li a:hover {
     color: #1cb698;
 }
 
-.nav-responsive{
+.nav-responsive {
     background-color: #1cb698;
     color: white;
     padding: 5px 10px;
@@ -65,10 +65,10 @@ html{
 
 /* INICIO */
 
-.inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,.1)),
-    url(../img/banner.webp);
-    background-size:cover;
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, .1)),
+        url(../img/banner.webp);
+    background-size: cover;
     height: 100vh;
     color: white;
     display: flex;
@@ -76,7 +76,7 @@ html{
     margin-top: 30px;
 }
 
-.inicio .contenido-banner{
+.inicio .contenido-banner {
     padding: 20px;
     background-color: #1e2326;
     max-width: 350px;
@@ -85,7 +85,7 @@ html{
     border-radius: 40px;
 }
 
-.inicio .contenido-banner img{
+.inicio .contenido-banner img {
     margin-top: 70px;
     border: 10px solid #1cb698;
     display: block;
@@ -94,19 +94,19 @@ html{
     border-radius: 100%
 }
 
-.inicio .contenido-banner h1{
+.inicio .contenido-banner h1 {
     margin-top: 40px;
     font-size: 38px;
     font-family: 'Roboto';
 }
 
-.inicio .contenido-banner h2{
+.inicio .contenido-banner h2 {
     font-size: 15px;
     font-weight: normal;
 }
 
 
-.inicio .contenido-banner .redes a{
+.inicio .contenido-banner .redes a {
     color: white;
     display: inline-block;
     text-decoration: none;
@@ -119,6 +119,120 @@ html{
     font-size: 20px;
     transition: .3s;
 }
-.inicio .contenido-banner .redes a:hover{
+
+.inicio .contenido-banner .redes a:hover {
     background-color: #1cb698;
+}
+
+.sobremi {
+    background-color: #1e2326;
+    color: white;
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'robotos';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span {
+    color: #1cb698;
+    font-weight: bold;
+}
+
+.sobremi .fila {
+    display: flex;
+}
+
+.sobremi .fila .col {
+    width: 50%;
+}
+
+.sobremi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'robotos';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul {
+    list-style: none;
+}
+
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong {
+    display: inline-block;
+    color: #1cb698;
+    width: 130px;
+}
+
+.sobremi .fila .contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .contenedor-intereses .interes {
+    width: 100px;
+    height: 100px;
+    background-color: #252525;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi .fila .contenedor-intereses .interes:hover {
+    background-color: #1cb698;
+}
+
+.sobremi .fila .contenedor-intereses .interes i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
 }
